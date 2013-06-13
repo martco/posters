@@ -1,53 +1,9 @@
 <html>
-
-  <style type="text/css">
-    body {
-      background: orange;
-      width: 100%;
-      text-align: center;
-    }
-
-    div, div.white {
-
-      /* 
-        parent div needs rotation set; children don't 
-        use nth-child to style children 
-      */
-
-      /* positioning */
-      z-index: 0;
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      margin: -50px 0 0 -50px;
-
-      /* dimension */
-      width:100px;
-      height:100px;
-
-      /* color */
-      background-color: rgba(24, 116, 205, 0.5);
-
-      /* alignment */
-      text-align: center;
-      transform:rotate(30deg);
-      -ms-transform:rotate(30deg);
-      -webkit-transform:rotate(45deg);
-    }
-
-    div.white {
-      z-index: -1;
-
-      margin-left: 0px;
-      background-color: white;
-    }
-  </style>
+  <head>
+    <link rel="stylesheet" type="text/css" href="/css/clash.css">
+  </head>
 
   <body>
-
-    <div>
-      <div></div>
-    </div>
     <div class="white"></div>
 
   </body>
