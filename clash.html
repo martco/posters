@@ -8,23 +8,31 @@
     }
 
     div, div.white {
-      position: fixed;
+
+      /* 
+        parent div needs rotation set; children don't 
+        use nth-child to style children 
+      */
+
+      /* positioning */
       z-index: 0;
+      position: fixed;
       top: 50%;
       left: 50%;
       margin: -50px 0 0 -50px;
 
-
-      text-align: center;
+      /* dimension */
       width:100px;
       height:100px;
 
+      /* color */
       background-color: rgba(24, 116, 205, 0.5);
 
-      /* Rotate div */
+      /* alignment */
+      text-align: center;
       transform:rotate(30deg);
-      -ms-transform:rotate(30deg); /* IE 9 */
-      -webkit-transform:rotate(45deg); /* Safari and Chrome */
+      -ms-transform:rotate(30deg);
+      -webkit-transform:rotate(45deg);
     }
 
     div.white {
@@ -37,7 +45,9 @@
 
   <body>
 
-    <div></div>
+    <div>
+      <div></div>
+    </div>
     <div class="white"></div>
 
   </body>
