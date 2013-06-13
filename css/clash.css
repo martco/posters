@@ -13,7 +13,6 @@
   }
 
   .squares { margin: 110px auto 150px 170px; }
-
   .text { margin: 75px 0 0 20px; }
   .text h1 { font-size: 5em; }
 
@@ -28,19 +27,20 @@
     width: 530px;
     height: 530px;
    
-
     /* color */
     background-color: transparent;
     border: 20px solid #d9dfd1;
   }
 
-  div.white div {
-    -webkit-transform:rotate(0deg);
+  div.white div { -webkit-transform:rotate(0deg); }
 
-    /* 20% reduction is inconstant 
-      need ypx * nth-child reduction for each child
-    */
-    width: 80%;
-    height: 80%;
+  div.white div                      { height: 450px; width: 450px; }
+  div.white div div                  { height: 370px; width: 370px; }
+  div.white div div div              { height: 290px; width: 290px; }
+  div.white div div div div          { height: 210px; width: 210px; }
+  div.white div div div div div      { height: 130px; width: 130px; }
+  div.white div div div div div div  { 
+    height: 50px;  width: 50px; 
+    background: #d9dfd1;
   }
 
