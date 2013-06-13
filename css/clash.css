@@ -2,24 +2,21 @@
     padding-top:1%;
   }
 
-  body, .container, div.white {
+  body, .container, div.white, div.white div{
     display:-webkit-box;
     -webkit-box-pack:center;
     -webkit-box-align:center;
   }
 
     .container {
-      z-index: -11;
+      overflow: hidden;
+
       background: #f57921;
       width: 716px;
-      overflow: hidden;
       height: 1008px;
     }
 
     div.white, div.white div {
-      /* positioning */
-      position: relative;
-
       /* dimension */
       width: 530px;
       height: 530px;
@@ -32,7 +29,11 @@
     }
 
       div.white div {
-        position: relative;
+        -webkit-transform:rotate(0deg);
+
+        /* 20% reduction is inconstant 
+          need ypx * nth-child reduction for each child
+        */
         width: 80%;
         height: 80%;
       }
