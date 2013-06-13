@@ -1,57 +1,46 @@
   body {
     font-family: AkzidenzGrotesk;
-    padding-top:1%;
     text-align: center;
   }
 
-  .squares {
-    margin-top: 110px;
-    margin-left: 170px;
-    margin-bottom: 150px;
+  .container {
+    margin: 10px auto;
+    text-align: left;
+    overflow: hidden;
+    background: #f57921;
+    width: 716px;
+    height: 1008px;
   }
 
-  .text {
-    margin: 75px 0 0 20px;
-  }
-    .text h1 {
-      font-size: 5em;      
-    }
+  .squares { margin: 110px auto 150px 170px; }
 
-  div.white, div.white div{
+  .text { margin: 75px 0 0 20px; }
+  .text h1 { font-size: 5em; }
+
+  div.white, div.white div {
     display:-webkit-box;
     -webkit-box-pack:center;
     -webkit-box-align:center;
+    -webkit-transform:rotate(45deg);
+    -webkit-box-sizing:border-box;
+
+    /* dimension */
+    width: 530px;
+    height: 530px;
+   
+
+    /* color */
+    background-color: transparent;
+    border: 20px solid #d9dfd1;
   }
 
-    .container {
-      margin: 10px auto;
-      text-align: left;
-      overflow: hidden;
+  div.white div {
+    -webkit-transform:rotate(0deg);
 
-      background: #f57921;
-      width: 716px;
-      height: 1008px;
-    }
-
-    div.white, div.white div {
-      /* dimension */
-      width: 530px;
-      height: 530px;
-      -webkit-transform:rotate(45deg);
-      -webkit-box-sizing:border-box;
-
-      /* color */
-      background-color: transparent;
-      border: 20px solid #d9dfd1;
-    }
-
-      div.white div {
-        -webkit-transform:rotate(0deg);
-
-        /* 20% reduction is inconstant 
-          need ypx * nth-child reduction for each child
-        */
-        width: 80%;
-        height: 80%;
-      }
+    /* 20% reduction is inconstant 
+      need ypx * nth-child reduction for each child
+    */
+    width: 80%;
+    height: 80%;
+  }
 
