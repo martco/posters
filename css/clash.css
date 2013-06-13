@@ -43,7 +43,7 @@
   }
 
   .squares div.white div div div div div div  { background: #d9dfd1; }
-  .squares div.blue div div div div div div  { background: rgba(-145, 113, 194, 0.6); }
+  .squares div.blue div div div div div div  { background: rgba(-93, 138, 164, 0.75); }
 
   .white, .white div  { border: 20px solid #d9dfd1; }
 
@@ -54,7 +54,7 @@
     margin-left: -100px;
   }
 
-  .blue, .blue div    { border: 20px solid rgba(-145, 113, 194, 0.6); }
+  .blue, .blue div    { border: 20px solid rgba(-93, 138, 164, 0.75); }
 
 
 
