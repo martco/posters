@@ -1,0 +1,55 @@
+    body {
+      background: orange;
+      width: 100%;
+
+      display:-webkit-box;
+      -webkit-box-pack:center;
+      -webkit-box-align:center;
+    }
+
+    div, div.white {
+
+      /* 
+        parent div needs rotation set; children don't 
+      */
+
+      /* positioning */
+      z-index: 0;
+
+      /* dimension */
+      width:100px;
+      height:100px;
+
+      /* color */
+      background-color: rgba(24, 116, 205, 0.5);
+
+      /* alignment */
+      text-align: center;
+      /*transform:rotate(45deg);*/
+      /*-webkit-transform:rotate(45deg);*/
+    }
+
+    div.white, div.white div {
+      z-index: -1;
+
+      /* positioning */
+      position: relative;
+
+      /* dimension */
+      display:-webkit-box;
+        -webkit-box-pack:center;
+        -webkit-box-align:center;
+      width: 500px;
+      height: 500px;
+
+      /* color */
+      background-color: transparent;
+      border: 20px solid white;
+    }
+
+      div.white div {
+        position: relative;
+        width: 80%;
+        height: 80%;
+      }
+
