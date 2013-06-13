@@ -5,6 +5,7 @@
 
   .container {
     margin: 10px auto;
+    position: relative;
     text-align: left;
     overflow: hidden;
     background: #f57921;
@@ -16,7 +17,7 @@
   .text { margin: 75px 0 0 20px; }
   .text h1 { font-size: 5em; }
 
-  div.white, div.white div {
+  .squares div {
     display:-webkit-box;
     -webkit-box-pack:center;
     -webkit-box-align:center;
@@ -29,18 +30,31 @@
    
     /* color */
     background-color: transparent;
-    border: 20px solid #d9dfd1;
   }
 
-  div.white div { -webkit-transform:rotate(0deg); }
-
-  div.white div                      { height: 450px; width: 450px; }
-  div.white div div                  { height: 370px; width: 370px; }
-  div.white div div div              { height: 290px; width: 290px; }
-  div.white div div div div          { height: 210px; width: 210px; }
-  div.white div div div div div      { height: 130px; width: 130px; }
-  div.white div div div div div div  { 
+  .squares div div { -webkit-transform:rotate(0deg); }
+  .squares div div                      { height: 450px; width: 450px; }
+  .squares div div div                  { height: 370px; width: 370px; }
+  .squares div div div div              { height: 290px; width: 290px; }
+  .squares div div div div div          { height: 210px; width: 210px; }
+  .squares div div div div div div      { height: 130px; width: 130px; }
+  .squares div div div div div div div  { 
     height: 50px;  width: 50px; 
-    background: #d9dfd1;
   }
+
+  .squares div.white div div div div div div  { background: #d9dfd1; }
+  .squares div.blue div div div div div div  { background: rgba(-145, 113, 194, 0.6); }
+
+  .white, .white div  { border: 20px solid #d9dfd1; }
+
+  .blue {
+    position: absolute;
+    top: 110;
+    z-index: 1;    
+    margin-left: -100px;
+  }
+
+  .blue, .blue div    { border: 20px solid rgba(-145, 113, 194, 0.6); }
+
+
 
