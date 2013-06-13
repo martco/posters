@@ -1,8 +1,42 @@
 <html>
 
+  <style type="text/css">
+    body {
+      background: orange;
+      width: 100%;
+      text-align: center;
+    }
+
+    div, div.white {
+      position: fixed;
+      z-index: 0;
+      top: 50%;
+      left: 50%;
+      margin: -50px 0 0 -50px;
+
+      text-align: center;
+      width:100px;
+      height:100px;
+      background-color:blue;
+
+      /* Rotate div */
+      transform:rotate(30deg);
+      -ms-transform:rotate(30deg); /* IE 9 */
+      -webkit-transform:rotate(45deg); /* Safari and Chrome */
+    }
+
+    div.white {
+      z-index: -100px;
+
+      margin-left: 0px;
+      background-color: white;
+    }
+  </style>
+
   <body>
 
-    <h1>Hello World</h1>
+    <div></div>
+    <div class="white"></div>
 
   </body>
 </html>
