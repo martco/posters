@@ -1,6 +1,8 @@
   body {
     font-family: AkzidenzGrotesk;
+    background: rgb(44, 44, 44);
     text-align: center;
+    padding: 20px 0 80px 0;
   }
 
   .container {
@@ -13,9 +15,23 @@
     height: 1008px;
   }
 
-  .squares { margin: 110px auto 150px 170px; }
-  .text { margin: 75px 0 0 20px; }
-  .text h1 { font-size: 5em; }
+  h1 { 
+    font-size: 6.3em; 
+    font-weight: normal; 
+    margin: 75px 0 50px 20px;  
+  }
+
+  p { 
+    float: left;
+    text-align: left;
+    font-size: 14px;
+    width: 160px;
+    margin: 0 0 0 20px; 
+  }
+  p + p { width: 260px; }
+  p + p + p { width: 200px;}
+
+  .squares { margin: 110px auto 117px 170px; }
 
   .squares div {
     display:-webkit-box;
@@ -24,26 +40,23 @@
     -webkit-transform:rotate(45deg);
     -webkit-box-sizing:border-box;
 
-    /* dimension */
     width: 530px;
     height: 530px;
    
-    /* color */
     background-color: transparent;
   }
 
-  .squares div div { -webkit-transform:rotate(0deg); }
   .squares div div                      { height: 450px; width: 450px; }
   .squares div div div                  { height: 370px; width: 370px; }
   .squares div div div div              { height: 290px; width: 290px; }
   .squares div div div div div          { height: 210px; width: 210px; }
   .squares div div div div div div      { height: 130px; width: 130px; }
-  .squares div div div div div div div  { 
-    height: 50px;  width: 50px; 
-  }
+  .squares div div div div div div div  { height: 50px;  width: 50px;  }
 
   .squares div.white div div div div div div  { background: #d9dfd1; }
-  .squares div.blue div div div div div div  { background: rgba(-93, 138, 164, 0.75); }
+  .squares div.blue div div div div div div  { background: rgba(-144, 123, 157, 0.6); }
+
+  .squares div div { -webkit-transform:rotate(0deg); }
 
   .white, .white div  { border: 20px solid #d9dfd1; }
 
@@ -54,7 +67,7 @@
     margin-left: -100px;
   }
 
-  .blue, .blue div    { border: 20px solid rgba(-93, 138, 164, 0.75); }
+  .blue, .blue div    { border: 20px solid rgba(-144, 123, 157, 0.6); }
 
 
 
