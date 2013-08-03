@@ -72,17 +72,4 @@
     margin-left: -100px;
   }
 
-  .blue:hover   {
-    margin-left: 0px;
-  }
-
-  .blue:active {
-    -webkit-transition: all 0.2s linear;
-    margin-left: 4px;
-    margin-bottom: 4px;
-  }
-
   .blue, .blue div    { border: 20px solid rgba(-144, 123, 157, 0.6); }
-
-
-
