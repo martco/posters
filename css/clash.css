@@ -54,7 +54,10 @@
   .squares div div div div div div div  { height: 50px;  width: 50px;  }
 
   .squares div.white div div div div div div  { background: #d9dfd1; }
-  .squares div.blue div div div div div div  { background: rgba(-144, 123, 157, 0.6); }
+  .squares div.blue div div div div div div  { 
+    background: rgba(-144, 123, 157, 0.6); 
+    border: none;
+  }
 
   .squares div div { -webkit-transform:rotate(0deg); }
 
