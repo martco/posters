@@ -15,18 +15,18 @@
     height: 1008px;
   }
 
-  h1 { 
-    font-size: 6.3em; 
-    font-weight: normal; 
-    margin: 75px 0 50px 20px;  
+  h1 {
+    font-size: 6.3em;
+    font-weight: normal;
+    margin: 75px 0 50px 20px;
   }
 
-  p { 
+  p {
     float: left;
     text-align: left;
     font-size: 14px;
     width: 160px;
-    margin: 0 0 0 20px; 
+    margin: 0 0 0 20px;
   }
   p + p { width: 260px; }
   p + p + p { width: 200px;}
@@ -42,7 +42,7 @@
 
     width: 530px;
     height: 530px;
-   
+
     background-color: transparent;
   }
 
