@@ -64,12 +64,10 @@
   .white, .white div  { border: 20px solid #d9dfd1; }
 
   .blue {
-    cursor: pointer;
-    -webkit-transition: all 2.0s ease;
     position: absolute;
-    top: 110;
-    z-index: 1;    
-    margin-left: -100px;
+    top: 0;
+    z-index: 1;
+    margin: 110px 0 0 -100px;
   }
 
   .blue, .blue div    { border: 20px solid rgba(-144, 123, 157, 0.6); }
