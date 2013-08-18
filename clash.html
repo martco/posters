@@ -3,15 +3,6 @@
   <head>
     <link rel="stylesheet" type="text/css" href="/css/fonts.css">
     <link rel="stylesheet" type="text/css" href="/css/clash.css">
-    <script type="text/javascript" defer="defer">
-      (function(){
-        var initialLength = 530,
-            lengthInterval = 80;
-        for(var i = initialLength; i > 50; (i = i - lengthInterval)) {
-          console.log(i);
-        }
-      })();
-    </script>
   </head>
 
   <body>
@@ -20,20 +11,7 @@
 
       <div class="squares">
 
-        <div class="white">
-          <div>
-            <div>
-              <div>
-                <div>
-                  <div>
-                    <div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div id="white"></div>
 
         <div class="blue">
           <div>
@@ -75,6 +53,31 @@
     </div>
 
 
+    <script type="text/javascript">
+      (function(){
+        var initialLength = 450,
+            lengthInterval = 80,
+            whiteParent = document.getElementById('white');
+
+        createNewSquare = function(newLength) {
+          element = document.createElement('div');
+          element.style.width  = newLength.toString() + "px";
+          element.style.height = newLength.toString() + "px";
+
+          return element;
+        };
+
+        getYoungestChild = function(el) {
+          if(el.hasChildNodes()) {
+            return getYoungestChild(el.firstElementChild);
+          } else return el;
+        };
+
+        for(var l = initialLength; l > 0; (l = l - lengthInterval)) {
+          getYoungestChild(whiteParent).appendChild(createNewSquare(l));
+        }
+      })();
+    </script>
 
   </body>
 </html>
