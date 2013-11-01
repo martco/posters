@@ -45,16 +45,7 @@
 
     background-color: transparent;
   }
-
-  .squares div div                      { height: 450px; width: 450px; }
-  .squares div div div                  { height: 370px; width: 370px; }
-  .squares div div div div              { height: 290px; width: 290px; }
-  .squares div div div div div          { height: 210px; width: 210px; }
-  .squares div div div div div div      { height: 130px; width: 130px; }
-  .squares div div div div div div div  { height: 50px;  width: 50px;  }
-
-  .squares div#white div div div div div div  { background: #d9dfd1; }
-  .squares div.blue div div div div div div  { 
+  .squares div#blue div div div div div div  { 
     background: rgba(-144, 123, 157, 0.6); 
     border: none;
   }
@@ -63,11 +54,11 @@
 
   #white, #white div  { border: 20px solid #d9dfd1; }
 
-  .blue {
+  #blue {
     position: absolute;
     top: 0;
     z-index: 1;
     margin: 110px 0 0 -100px;
   }
 
-  .blue, .blue div    { border: 20px solid rgba(-144, 123, 157, 0.6); }
+  #blue, #blue div    { border: 20px solid rgba(-144, 123, 157, 0.6); }

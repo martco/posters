@@ -10,30 +10,12 @@
     <div class="container">
 
       <div class="squares">
-
         <div id="white"></div>
-
-        <div class="blue">
-          <div>
-            <div>
-              <div>
-                <div>
-                  <div>
-                    <div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
+        <div id="blue"></div>
       </div>
 
 
-      <h1> 
-        the clash
-      </h1>
+      <h1>the clash</h1>
 
       <p>
         with the brattles <br/>
@@ -58,6 +40,7 @@
         var initialLength = 450,
             lengthInterval = 80,
             whiteParent = document.getElementById('white');
+            blueParent = document.getElementById('blue');
 
         createNewSquare = function(newLength) {
           element = document.createElement('div');
@@ -75,7 +58,12 @@
 
         for(var l = initialLength; l > 0; (l = l - lengthInterval)) {
           getYoungestChild(whiteParent).appendChild(createNewSquare(l));
+          getYoungestChild(blueParent).appendChild(createNewSquare(l));
         }
+
+        getYoungestChild(whiteParent).style.backgroundColor = whiteParent.style.borderColor;
+
+
       })();
     </script>
 
