@@ -51,9 +51,7 @@
         };
 
         var getYoungestChild = function(el) {
-          if(el.hasChildNodes()) {
-            return getYoungestChild(el.firstElementChild);
-          } else return el;
+          return el.hasChildNodes() ? el.querySelector(":empty") : el;
         };
 
         for(var l = initialLength; l > 0; (l = l - lengthInterval)) {
