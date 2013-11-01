@@ -50,6 +50,11 @@
     border: none;
   }
 
+  .squares div#white div div div div div div  { 
+    background: #d9dfd1;
+    border: none;
+  }
+
   .squares div div { -webkit-transform:rotate(0deg); }
 
   #white, #white div  { border: 20px solid #d9dfd1; }
