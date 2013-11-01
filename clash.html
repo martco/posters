@@ -37,20 +37,20 @@
 
     <script type="text/javascript">
       (function(){
-        var initialLength = 450,
-            lengthInterval = 80,
-            whiteParent = document.getElementById('white');
-            blueParent = document.getElementById('blue');
+        var initialLength     = 450,
+            lengthInterval    = 80,
+            whiteParent       = document.getElementById('white');
+            blueParent        = document.getElementById('blue');
 
-        createNewSquare = function(newLength) {
-          element = document.createElement('div');
+        var createNewSquare = function(newLength) {
+          var element = document.createElement('div');
           element.style.width  = newLength.toString() + "px";
           element.style.height = newLength.toString() + "px";
 
           return element;
         };
 
-        getYoungestChild = function(el) {
+        var getYoungestChild = function(el) {
           if(el.hasChildNodes()) {
             return getYoungestChild(el.firstElementChild);
           } else return el;
